@@ -21,14 +21,11 @@ function pressIt() {
 
 function submitIt(){
   $("form").on("submit", function() {
-  if ($("input:first").val() === "correct") {
-    alert('Your form is going to be submitted now.');
+  alert('Your form is going to be submitted now.');
     return;
-  }
-  alert("You entered the wrong value");
-  return;
-});
+  })
 }
+
 
 $(document).ready(function(){
 getIt();
